@@ -1,6 +1,7 @@
 docker build -t uchestik/fib-client:latest -t uchestik/fib-client:$SHA -f ./frontend/Dockerfile ./frontend
 docker build -t uchestik/fib-server:latest -t uchestik/fib-server:$SHA -f ./server/Dockerfile ./server
 docker build -t uchestik/fib-worker:latest -t uchestik/fib-worker:$SHA -f ./worker/Dockerfile ./worker
+
 docker push uchestik/fib-client:latest
 docker push uchestik/fib-server:latest
 docker push uchestik/fib-worker:latest
